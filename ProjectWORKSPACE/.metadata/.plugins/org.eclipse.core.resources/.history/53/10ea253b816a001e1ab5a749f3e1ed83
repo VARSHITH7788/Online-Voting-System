@@ -1,0 +1,15 @@
+package com.klef.jfsd.springboot.service;
+
+import java.util.List;
+
+import com.klef.jfsd.springboot.model.Candidate;
+import com.klef.jfsd.springboot.model.Voter;
+
+public interface VoterService
+{
+	public String updateVoter(Voter v);
+	public Voter viewVoterById(int vid);
+	public String updateemployee(Employee emp);
+	public List<Candidate> viewselected(String ename);
+	public Voter checkVoterLogin(String email, String pwd);
+}

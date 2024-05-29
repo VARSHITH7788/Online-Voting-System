@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+ <link rel="stylesheet" href="./css/add.css" />
+</head>
+<body>
+<%@ include file="voternavbar.jsp" %>
+<div id="main">
+    <section class="container">
+     
+        <div class="input-box">
+          <label for="dropdown">Election Participating:</label>
+        <select id="dropdown" name="selected_option">
+            <c:forEach var="option" items="${options}">
+                <option value="${option.id}">${option.name}</option>
+            </c:forEach>
+        </select>
+        </div>
+        
+        <button>Submit</button>
+      </form>
+    </section>
+     </div>
+</body>
+</html>

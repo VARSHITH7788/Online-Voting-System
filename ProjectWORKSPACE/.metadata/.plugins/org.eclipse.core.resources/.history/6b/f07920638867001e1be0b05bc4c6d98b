@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+    </style>
+    <title>HTML Table with Radio Buttons</title>
+</head>
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th>Select</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><input type="radio" name="selectRow"></td>
+            <td>John Doe</td>
+            <td>25</td>
+            <td>New York</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="selectRow"></td>
+            <td>Jane Smith</td>
+            <td>30</td>
+            <td>Los Angeles</td>
+        </tr>
+        <!-- Add more rows as needed -->
+    </tbody>
+</table>
+
+</body>
+</html>

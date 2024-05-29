@@ -1,0 +1,10 @@
+package com.klef.jfsd.springboot.repository;
+
+import org.hibernate.sql.ast.tree.expression.JdbcParameter;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ElectionRepository extends JdbcParameter
+{
+
+}
